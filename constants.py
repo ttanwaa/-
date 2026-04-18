@@ -1,0 +1,74 @@
+"""Game constants and configuration."""
+import pygame
+
+# Screen
+SW, SH = 1024, 600
+FPS = 60
+TITLE = "Sector 7 - ซากเมืองคนบาป"
+
+# Physics
+GRAVITY = 0.55
+PLAYER_SPEED = 4
+PLAYER_JUMP = -12
+PLAYER_JUMP_BOOSTED = -18
+GROUND_Y = 520
+
+# Player
+PLAYER_MAX_HP = 100
+PLAYER_START_AMMO = 30
+PLAYER_IFRAMES = 60  # invincibility frames after hit
+
+# Weapons
+MAIN_GUN_DMG = 20
+PISTOL_DMG = 8
+BULLET_SPEED = 10
+FIREBALL_SPEED = 4
+
+# Enemies
+HELLHOUND_HP = 60
+HELLHOUND_SPEED = 1.5
+HELLHOUND_DMG = 15
+GAZER_HP = 40
+GAZER_SHOOT_CD = 120  # frames between shots
+GAZER_DMG = 12
+
+# Boss
+BARON_HP = 600  # 10x normal
+BARON_SPEED = 1.2
+BARON_HAMMER_DMG = 30
+BARON_FIREBALL_DMG = 20
+BARON_SHOCKWAVE_DMG = 25
+
+# Day/Night
+NIGHT_TRIGGER_TIME = 60  # seconds
+NIGHT_SPEED_MULT = 1.5
+NIGHT_HP_MULT = 1.5
+NIGHT_DROP_MULT = 2.0
+
+# Items
+AMMO_RESTORE = 15
+HEALTH_RESTORE = 30
+BOOT_DURATION = 600  # frames (10 seconds)
+SHIELD_HITS = 1
+
+# Level
+LEVEL_WIDTH = 6000
+NIGHT_TRIGGER_X = 3000
+BOSS_ARENA_X = 5000
+
+# Colors
+C_HP_BAR = (220, 40, 40)
+C_HP_BG = (60, 20, 20)
+C_AMMO = (255, 220, 50)
+C_WHITE = (255, 255, 255)
+C_BLACK = (0, 0, 0)
+C_RED = (255, 50, 50)
+C_NIGHT_OVERLAY = (40, 0, 0)
+
+# Game States
+ST_INTRO = 0
+ST_PLAY = 1
+ST_BOSS_INTRO = 2
+ST_BOSS = 3
+ST_CLEAR = 4
+ST_OVER = 5
